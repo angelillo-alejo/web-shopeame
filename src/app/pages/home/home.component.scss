@@ -1,0 +1,27 @@
+.container {
+    background-color: rgb(215, 214, 214);
+    height: 80vh;
+    position: relative;
+  }
+  
+  .menu {
+    background-color: white;
+    position: absolute;
+    height: 600px;
+    width: 60%;
+    left: 20%;
+    top: 10%
+  }
+  
+  .textos {
+    display: flex;
+    flex-direction: column;
+  }
+  .text{
+    font-family: arial;
+  }
+  
+  .textHe {
+    font-family: arial;
+    text-align: center;
+  }

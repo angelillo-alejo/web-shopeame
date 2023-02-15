@@ -1,6 +1,8 @@
+import { HomeComponent } from './home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+//Aqui va la ruta
 const routes: Routes = [];
 
 @NgModule({
@@ -8,3 +10,4 @@ const routes: Routes = [];
   exports: [RouterModule]
 })
 export class HomeRoutingModule { }
+
