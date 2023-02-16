@@ -1,0 +1,24 @@
+footer{
+    text-decoration:none;
+    font-family: arial;
+    background-color: rgb(83, 83, 83);
+    color:white
+    }
+    .social, .copy{
+    display: flex;
+    justify-content: space-around;
+    }
+    .social__redes{
+    list-style:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    li{
+    margin: 1px;
+    padding: 2px;
+    }
+    a{
+    text-decoration: none;
+    color:white;
+    }
