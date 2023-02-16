@@ -1,0 +1,10 @@
+.text{
+    font-family: arial;
+  }
+  
+  .gallery{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15px;
+  }
