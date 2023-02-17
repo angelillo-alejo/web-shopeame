@@ -1,7 +1,10 @@
+import { GestionComponent } from './gestion.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: "", component: GestionComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
