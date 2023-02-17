@@ -39,6 +39,17 @@ export class ShopeameServicesService {
   deleteProduct(id: string){
     return this.http.delete(this.url + '/' + id);
   }
+//parte del formulario
+  getProductsData(){
+    return this.http.get(this.url)
+  }
+  getProduct(id:number){
+    return this.http.get(`${this.url}/${id}`)
+  }
+
+  editProduct(id:number){
+    return this.http.delete(`${this.url}/${id}`)
+  }
 }
 
 

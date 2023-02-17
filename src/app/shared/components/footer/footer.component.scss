@@ -1,5 +1,6 @@
 footer{
     text-decoration:none;
+    height: 150px;
     font-family: arial;
     background-color: rgb(83, 83, 83);
     color:white
@@ -9,6 +10,7 @@ footer{
     justify-content: space-around;
     }
     .social__redes{
+        padding: 10px;
     list-style:none;
     display: flex;
     align-items: center;

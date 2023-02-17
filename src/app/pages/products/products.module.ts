@@ -1,3 +1,4 @@
+import { PipesModule } from './../pipes/pipes.module';
 import { GalleryComponent } from './../../shared/components/gallery/gallery.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -13,7 +14,8 @@ import { ProductsComponent } from './products.component';
   ],
   imports: [
     CommonModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    PipesModule,
   ]
 })
 export class ProductsModule { }

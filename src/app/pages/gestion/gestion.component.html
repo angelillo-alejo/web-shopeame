@@ -1,0 +1,33 @@
+<div class="container__form">
+
+    <form novalidate [formGroup]="creationform" (ngSubmit)="onSubmit()">
+    <div>
+        <label>Nombre del producto:
+        <input formControlName="name" placeholder="Por ej: Tiesto para planta"></label>
+    </div>
+    <div>
+        <label>Precio:
+        <input formControlName="price" placeholder="Por ej: 9.50€"></label>
+    </div>
+    <div>
+        <label>Descripción:
+        <input formControlName="description" placeholder="Por ej:Lo más vendido este mes"></label>
+    </div>
+    <div>
+        <label>Ruta de la imagen:
+        <input formControlName="image" placeholder="Por ej:https://images.pexels.com/photos.png"></label>
+    </div>
+    <div>
+        <label>Opiniones:
+        <input formControlName="stars" placeholder="Por ej: 4.28"></label>
+    </div>
+    <div>
+        <button type="submit">Guardar</button>
+    </div>
+    </form>
+    </div>
+    
+    <div class="img__form">
+        <img src="{{ProductsNew.image}}">
+    </div>
+    
