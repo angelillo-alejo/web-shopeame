@@ -1,27 +1,27 @@
 .container {
-    background-color: white;
-    height: 120vh;
-    position: relative;
-  }
-  
-  .menu {
-    background-color: rgba(245, 245, 245, 0.851);
-    position: absolute;
-    height: 600px;     
-    width: 70%;
-    left: 20%;
-    top: 10%
-  }
-  
-  .textos {
-    display: flex;
-    flex-direction: column;
-  }
-  .text{
-    font-family: arial;
-  }
-  
-  .textHe {
-    font-family: arial;
-    text-align: center;
-  }
+  background-color: white;
+  height: 65vh;
+  position: relative;
+}
+
+.menu {
+  background-color: rgba(245, 245, 245, 0.851);
+  position: absolute;
+  height: 600px;
+  width: 70%;
+  left: 20%;
+  top: 10%
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  font-family: arial;
+}
+
+.text__he {
+  font-family: arial;
+  text-align: center;
+}
