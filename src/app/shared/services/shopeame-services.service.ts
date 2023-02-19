@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ShopeameServicesService {
 
-  url = 'https://my-json-server.typicode.com/franlindebl/shopeame-api-v2/products';
+  private url = 'https://my-json-server.typicode.com/franlindebl/shopeame-api-v2/products';
 
   product = {
     id: '',
