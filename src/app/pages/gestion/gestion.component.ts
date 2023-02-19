@@ -8,16 +8,23 @@ import { FormBuilder,FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./gestion.component.scss']
 })
 export class GestionComponent {
-    creationform! : FormGroup;
-    
+
+  //declaramos el form
+    creationform! : FormGroup; 
+
+
     constructor(private formbuilder:FormBuilder, private shopeameServicesService: ShopeameServicesService){}
     public ProductsNew = this.shopeameServicesService.product;
   
+    calcularpromedio(){
+      
+    }
+    //lo que va inicializar, llama al formulario
     ngOnInit(): void{
     this.creationform =this.formbuilder.group({
     name:[this.ProductsNew.name,[Validators.required,Validators.minLength(5)]],
     price:[this.ProductsNew.price,[Validators.required]],
-    description:[this.ProductsNew.description,[Validators.required,Validators.minLength(5),Validators.maxLength(20)]],
+    description:[this.ProductsNew.description,[Validators.required,Validators.maxLength(20)]],
     image:[this.ProductsNew.image,[Validators.required]],
 });
 this.creationform.valueChanges.subscribe(changes=>{
@@ -29,4 +36,3 @@ public onSubmit(){
 console.log(this.ProductsNew);
 }
 }
-

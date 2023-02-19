@@ -14,7 +14,6 @@ import { HeaderComponent } from './shared/components/header/header.component';
   declarations: [
     AppComponent,
     FooterComponent,
-    GestionComponent,
     HeaderComponent
   ],
   imports: [

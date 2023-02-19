@@ -6,9 +6,10 @@ import { CommonModule } from '@angular/common';
 import { GestionRoutingModule } from './gestion-routing.module';
 
 
+
 @NgModule({
   declarations: [
-    GestionComponent,
+  GestionComponent,
   ],
   imports: [
     CommonModule,

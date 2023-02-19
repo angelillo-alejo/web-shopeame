@@ -1,33 +1,53 @@
 <div class="container__form">
 
-    <form novalidate [formGroup]="creationform" (ngSubmit)="onSubmit()">
+    <form class="col-sm-5" novalidate [formGroup]="creationform" (ngSubmit)="onSubmit()">
     <div>
-        <label>Nombre del producto:
-        <input formControlName="name" placeholder="Por ej: Tiesto para planta"></label>
+        <label for="exampleFormControlTextarea1" class="form-label">Nombre del producto: </label>
+        <input type="text" class="form-control" formControlName="name" placeholder="Tiesto para planta">
     </div>
     <div>
-        <label>Precio:
-        <input formControlName="price" placeholder="Por ej: 9.50€"></label>
+        <label for="exampleFormControlTextarea1" class="form-label">Precio: </label>
+        <input type="text" class="form-control" formControlName="price" placeholder="9,50 €">
     </div>
     <div>
-        <label>Descripción:
-        <input formControlName="description" placeholder="Por ej:Lo más vendido este mes"></label>
+    <label for="exampleFormControlInput1" class="form-label">Descripción:</label>
+        <input type="text" class="form-control" formControlName="description" placeholder="Lo más vendido este mes">
     </div>
     <div>
-        <label>Ruta de la imagen:
-        <input formControlName="image" placeholder="Por ej:https://images.pexels.com/photos.png"></label>
+        <label for="exampleFormControlInput1" class="form-label">Ruta de la imagen:</label>
+        <input type="text" class="form-control"  formControlName="image" placeholder="Por ej:https://images.pexels.com/photos.png">
     </div>
+    <label for="exampleFormControlTextarea1" class="form-label">Opiniones: </label>
+    <input type="text" class="form-control" formControlName="stars" placeholder="Valora de 1 a 5">
     <div>
-        <label>Opiniones:
-        <input formControlName="stars" placeholder="Por ej: 4.28"></label>
-    </div>
-    <div>
-        <button type="submit">Guardar</button>
+        <button [disabled]="!creationform.valid" type="submit" class="btn">Guardar</button>
     </div>
     </form>
+
+    <div id="img__form">
+        <p>Nuevo producto:</p>
+        <img src="{{ProductsNew.image}}">
+        <p class="name__img"> {{ProductsNew.name}} </p> 
+        <p class="description__img"> {{ProductsNew.description}} </p>
+        <p class="price__img"> {{ProductsNew.price}} </p> 
+    
+    <div class="container__star">
+        <input type="radio" name="star" id="star-5" value="calcular">
+        <label for="star-5" class="fa-solid fa-star">★</label>
+        <input type="radio" name="star" id="star-4" value="calcular">
+        <label for="star-4" class="fa-solid fa-star">★</label>
+        <input type="radio" name="star" id="star-3" value="calcular">
+        <label for="star-3" class="fa-solid fa-star">★</label>
+        <input type="radio" name="star" id="star-2" value="calcular">
+        <label for="star-2" class="fa-solid fa-star">★</label>
+        <input type="radio" name="star" id="star-1" value="calcular">
+        <label for="star-1" class="fa-solid fa-star">★</label>
+    </div>
+    </div>
     </div>
     
-    <div class="img__form">
-        <img src="{{ProductsNew.image}}">
-    </div>
+    
+
+    
+    
     
