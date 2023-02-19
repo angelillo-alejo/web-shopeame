@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ShopeameServicesService {
 
-  url = 'https://my-json-server.typicode.com/franlindebl/shopeame-api-v2/products';
+  private url = 'https://my-json-server.typicode.com/franlindebl/shopeame-api-v2/products';
 
   product = {
     id: '',
@@ -38,6 +38,17 @@ export class ShopeameServicesService {
   //PUT: para borrar recursos del servidor
   deleteProduct(id: string){
     return this.http.delete(this.url + '/' + id);
+  }
+  //parte del formulario
+  getProductsData(){
+    return this.http.get(this.url)
+  }
+  getProduct(id:number){
+    return this.http.get(`${this.url}/${id}`)
+  }
+
+  editProduct(id:number){
+    return this.http.delete(`${this.url}/${id}`)
   }
 }
 

@@ -1,5 +1,6 @@
 
-  <div class="row row-cols-1 row-cols-md-3 g-4">
+<div><h4>Listado de productos({{products.length}})</h4></div>
+  <div class="row row-cols-1 row-cols-md-4 g-5">
     <div class="col" *ngFor="let product of products">
       <div class="card h-100">
         <img src="{{product.image}}" class="card-img-top" alt="Imagen de producto">
@@ -9,11 +10,11 @@
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><h4>{{product.name}}</h4></li>
           <li class="list-group-item">{{product.description}}</li>
-          <li class="list-group-item">{{product.price}}€</li>
+          <li class="list-group-item">${{product.price}}</li>
         </ul>
-        <div class="card-footer d-grid gap-2">
+        <div class="card-footer d-grid">
           <button class="btn btn-warning" (click)="put(products.id)">Editar</button>
-          <button class="btn btn-primary" (click)="delete(products.id)">Eliminar</button>
+          <!-- <button class="btn btn-primary" (click)="delete(products.id)">Eliminar</button> -->
         </div>
       </div>
     </div>
