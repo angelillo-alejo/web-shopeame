@@ -1,0 +1,59 @@
+.container__form{
+    margin: 25px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-around;
+}
+
+#img__form{
+    border-left: rgb(247, 189, 88) solid 3px;
+    width: 49%;
+    display: flex;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.btn{
+margin-top: 3%;
+background-color: rgb(247, 189, 88); 
+color: azure;
+}
+.name__img{
+    margin: 3px;
+    font-size: 25px;
+}
+.price__img{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.container__star{
+    transform: rotateY('180deg');
+    display: flex;
+    place-items:left;
+}
+.container__star input{
+    display: none;
+}
+.container__star label{
+    display: block;
+    color: rgb(185, 177, 177);
+    font-size: 35px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.container__star label:not(:last-child){
+    margin-right: 5px;
+}
+.container__star input:checked ~ label,
+.container__star input:hover ~ label{
+    color: orange;
+}
+
+.container__star input:hover ~ label{
+    transform: scale(1.2) rotate(-30deg);
+}
